@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!-- Teckenkodning och mobilanpassning -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sidans titel -->
+    <title>Johanna | Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logga.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header med logotyp och navigering -->
+    <header class="site-header">
+
+        <!-- Logotyp som leder till startsidan -->
+        <a href="index.html" class="logotyp" aria-label="Till startsidan">
+            <img src="images/logga.png" alt="JS.">
+        </a>
+
+        <!-- Navigeringsmeny -->
+        <nav class="navbar" aria-label="Huvudmeny">
+            <ul>
+                <li><a href="index.html" aria-current="page">Hem</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="projekt.html">Projekt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Här lägger vi senare sidans innehåll -->
+    <main>
+                <!-- Introduktion med bakgrundsbild -->
+        <section class="introduktion">
+
+            <div class="introduktion-innehall">
+
+                <h1>Hej, jag är<br>Johanna.</h1>
+
+                <p>
+                    Jag gillar att skapa, formge och
+                    förvandla idéer till verklighet.
+                </p>
+
+                <a href="#projekt" class="introduktion-knapp">
+                    Se mina projekt →
+                </a>
+
+            </div>
+
+        </section>
+
+        
+        <!-- Projektgalleri med fyra utvalda projekt -->
+        <section class="projektgalleri" id="projekt">
+
+            <div class="projekt-container">
+
+                <h2>Utvalda projekt</h2>
+
+                <div class="projekt-grid">
+
+                    <!-- Projekt 1: Fyrklöver -->
+                    <article class="projekt-kort">
+                        <a href="fyrklover.html">
+                            <img
+                                src="images/Projekt.grupparbete.webp"
+                                alt="Förhandsvisning av webbplatsen Fyrklöver">
+
+                            <h3>Fyrklöver</h3>
+                            <p>Webbdesign · Grupparbete</p>
+                        </a>
+                    </article>
+
+                    <!-- Projekt 2: Logotyp och design -->
+                    <article class="projekt-kort">
+                        <a href="logotyp.html">
+                            <img
+                                src="images/Logotyp och design.png"
+                                alt="Logotyp med bokstäverna JS och botaniska detaljer">
+
+                            <h3>Logotyp & design</h3>
+                            <p>Grafisk formgivning</p>
+                        </a>
+                    </article>
+
+                    <!-- Projekt 3: Skisser och planering -->
+                    <article class="projekt-kort">
+                        <a href="skisser.html">
+                            <img
+                                src="images/skisser och planering.png"
+                                alt="Skisser och planering av webbplatsens layout">
+
+                            <h3>Skisser & planering</h3>
+                            <p>UX · Designprocess</p>
+                        </a>
+                    </article>
+
+                    <!-- Projekt 4: Eget webbprojekt -->
+                    <article class="projekt-kort">
+                        <a href="webbprojekt.html">
+                            <img
+                                src="images/portfolio.png"
+                                alt="Ett eget webbprojekt som visas på en laptop">
+
+                            <h3>Eget webbprojekt</h3>
+                            <p>HTML · CSS · Koncept</p>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+</html>
