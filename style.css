@@ -1805,3 +1805,688 @@ img {
   }
 
 }
+
+/* =====================================
+   PORTFOLIO – PROJEKTDETALJ
+===================================== */
+
+.portfolio-detail-page .portfolio-detail-main {
+  background: var(--surface, #F7F4EE);
+  padding: 45px 5% 55px;
+}
+
+/* =====================================
+   ÖVERSTA SEKTIONEN
+===================================== */
+
+.portfolio-detail-page .portfolio-detail-hero {
+  display: grid;
+  grid-template-columns: 42% minmax(0, 1fr);
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-detail-page .portfolio-hero-text {
+  min-width: 0;
+}
+
+.portfolio-detail-page .portfolio-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 22px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #35483E;
+}
+
+.portfolio-detail-page .portfolio-line {
+  display: block;
+  width: 75px;
+  height: 1px;
+  background: #A5B5A0;
+}
+
+.portfolio-detail-page .portfolio-hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(40px, 5vw, 65px);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.portfolio-detail-page .portfolio-hero-text > p {
+  max-width: 440px;
+  margin-bottom: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+/* Stor bild */
+
+.portfolio-detail-page .portfolio-hero-image {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.portfolio-detail-page .portfolio-hero-image img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =====================================
+   TRE FÖRHANDSVISNINGAR
+===================================== */
+
+.portfolio-detail-page .portfolio-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.portfolio-detail-page .portfolio-preview-card {
+  min-width: 0;
+}
+
+.portfolio-detail-page .portfolio-preview-image {
+  width: 100%;
+  aspect-ratio: 1.45 / 1;
+  padding: 10px;
+
+  background: #E3DDD3;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.portfolio-detail-page .portfolio-preview-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 4px;
+}
+
+.portfolio-detail-page .portfolio-preview-card h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 12px 5px 5px;
+}
+
+.portfolio-detail-page .portfolio-preview-card p {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 5px;
+}
+
+/* =====================================
+   OM PROJEKTET OCH MÅL
+===================================== */
+
+.portfolio-detail-page .portfolio-info-section {
+  display: grid;
+  grid-template-columns: 56% minmax(0, 1fr);
+  gap: 30px;
+
+  padding: 30px 15px;
+  border-top: 1px solid #A5B5A0;
+  border-bottom: 1px solid #A5B5A0;
+}
+
+.portfolio-detail-page .portfolio-info-left {
+  padding-right: 25px;
+}
+
+.portfolio-detail-page .portfolio-info-left h2,
+.portfolio-detail-page .portfolio-info-right h2,
+.portfolio-detail-page .portfolio-process-left h2,
+.portfolio-detail-page .portfolio-process-right h2,
+.portfolio-detail-page .portfolio-result h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.portfolio-detail-page .portfolio-info-left p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.portfolio-detail-page .portfolio-info-right {
+  border-left: 1px solid #A5B5A0;
+  padding-left: 30px;
+}
+
+/* Mål och syfte */
+
+.portfolio-detail-page .portfolio-goals {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.portfolio-detail-page .portfolio-goal {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.portfolio-detail-page .portfolio-goal-icon {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #EAE6DE;
+  color: #172B24;
+}
+
+.portfolio-detail-page .portfolio-goal-icon svg {
+  width: 29px;
+  height: 29px;
+}
+
+.portfolio-detail-page .portfolio-goal p {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* =====================================
+   ARBETSPROCESS OCH TEKNIK
+===================================== */
+
+.portfolio-detail-page .portfolio-process-section {
+  display: grid;
+  grid-template-columns: 56% minmax(0, 1fr);
+  gap: 30px;
+  padding: 30px 15px;
+}
+
+.portfolio-detail-page .portfolio-process-left {
+  padding-right: 25px;
+}
+
+.portfolio-detail-page .portfolio-process-left p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.portfolio-detail-page .portfolio-process-left p:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-detail-page .portfolio-process-right {
+  border-left: 1px solid #A5B5A0;
+  padding-left: 30px;
+}
+
+/* Tekniketiketter */
+
+.portfolio-detail-page .portfolio-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-bottom: 25px;
+}
+
+.portfolio-detail-page .portfolio-tech-tags span {
+  padding: 9px 13px;
+  background: #EAE6DE;
+  color: #172B24;
+  border-radius: 5px;
+
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Vad jag har lärt mig */
+
+.portfolio-detail-page .portfolio-learning-title {
+  margin-top: 15px;
+}
+
+.portfolio-detail-page .portfolio-learning-list {
+  padding-left: 22px;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.portfolio-detail-page .portfolio-learning-list li {
+  padding-left: 3px;
+}
+
+/* =====================================
+   RESULTAT
+===================================== */
+
+.portfolio-detail-page .portfolio-result {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 35px;
+
+  margin-top: 10px;
+  padding: 25px 35px;
+
+  background: #EAE8DE;
+  border-radius: 9px;
+}
+
+.portfolio-detail-page .portfolio-result h2 {
+  margin-bottom: 8px;
+}
+
+.portfolio-detail-page .portfolio-result-text p {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.portfolio-detail-page .portfolio-result-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portfolio-detail-page .portfolio-result-decoration svg {
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.portfolio-detail-page .portfolio-result-decoration p {
+  font-family: "Caveat", cursive;
+  font-size: 29px;
+  line-height: 1.1;
+  text-align: center;
+  transform: rotate(-7deg);
+}
+
+/* =====================================
+   BRED DESKTOPLAYOUT
+===================================== */
+
+@media (min-width: 951px) {
+
+  .page-wrapper.portfolio-detail-page {
+    width: min(100% - 40px, 1350px);
+  }
+
+  .portfolio-detail-page .portfolio-detail-main {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 950px) {
+
+  .portfolio-detail-page .portfolio-detail-hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .portfolio-detail-page .portfolio-hero-text h1 {
+    font-size: 42px;
+  }
+
+  .portfolio-detail-page .portfolio-hero-text > p {
+    font-size: 15px;
+  }
+
+  .portfolio-detail-page .portfolio-hero-image img {
+    height: 300px;
+  }
+
+  .portfolio-detail-page .portfolio-info-section,
+  .portfolio-detail-page .portfolio-process-section {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .portfolio-detail-page .portfolio-info-right,
+  .portfolio-detail-page .portfolio-process-right {
+    padding-left: 20px;
+  }
+
+}
+
+/* =====================================
+   MOBILANPASSNING
+===================================== */
+
+@media (max-width: 700px) {
+
+  .portfolio-detail-page .portfolio-detail-main {
+    padding: 25px 18px 35px;
+  }
+
+  /* Presentation */
+
+  .portfolio-detail-page .portfolio-detail-hero {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+
+  .portfolio-detail-page .portfolio-eyebrow {
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-detail-page .portfolio-hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio-detail-page .portfolio-hero-text > p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  .portfolio-detail-page .portfolio-hero-image img {
+    height: 220px;
+  }
+
+  /* Förhandsvisningar */
+
+  .portfolio-detail-page .portfolio-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .portfolio-detail-page .portfolio-preview-image {
+    aspect-ratio: 1.5 / 1;
+  }
+
+  .portfolio-detail-page .portfolio-preview-card h2 {
+    font-size: 20px;
+  }
+
+  .portfolio-detail-page .portfolio-preview-card p {
+    font-size: 14px;
+  }
+
+  /* Om projektet */
+
+  .portfolio-detail-page .portfolio-info-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px 0;
+  }
+
+  .portfolio-detail-page .portfolio-info-left {
+    padding-right: 0;
+  }
+
+  .portfolio-detail-page .portfolio-info-right {
+    border-left: none;
+    border-top: 1px solid #A5B5A0;
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .portfolio-detail-page .portfolio-info-left h2,
+  .portfolio-detail-page .portfolio-info-right h2,
+  .portfolio-detail-page .portfolio-process-left h2,
+  .portfolio-detail-page .portfolio-process-right h2,
+  .portfolio-detail-page .portfolio-result h2 {
+    font-size: 25px;
+  }
+
+  .portfolio-detail-page .portfolio-info-left p,
+  .portfolio-detail-page .portfolio-process-left p {
+    font-size: 14px;
+  }
+
+  .portfolio-detail-page .portfolio-goal p {
+    font-size: 13px;
+  }
+
+  /* Arbetsprocess */
+
+  .portfolio-detail-page .portfolio-process-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px 0;
+  }
+
+  .portfolio-detail-page .portfolio-process-left {
+    padding-right: 0;
+  }
+
+  .portfolio-detail-page .portfolio-process-right {
+    border-left: none;
+    border-top: 1px solid #A5B5A0;
+    padding-left: 0;
+    padding-top: 25px;
+  }
+
+  .portfolio-detail-page .portfolio-learning-list {
+    font-size: 13px;
+  }
+
+  /* Resultat */
+
+  .portfolio-detail-page .portfolio-result {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 25px 20px;
+  }
+
+  .portfolio-detail-page .portfolio-result-text p {
+    font-size: 14px;
+  }
+
+  .portfolio-detail-page .portfolio-result-decoration {
+    gap: 15px;
+  }
+
+  .portfolio-detail-page .portfolio-result-decoration svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .portfolio-detail-page .portfolio-result-decoration p {
+    font-size: 26px;
+  }
+
+}
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .portfolio-detail-page .portfolio-detail-main {
+    background: var(--surface, #172B24);
+  }
+
+  .portfolio-detail-page .portfolio-eyebrow {
+    color: #A5B5A0;
+  }
+
+  .portfolio-detail-page .portfolio-preview-image {
+    background: #30463B;
+  }
+
+  .portfolio-detail-page .portfolio-goal-icon {
+    background: #35483E;
+    color: #F7F4EE;
+  }
+
+  .portfolio-detail-page .portfolio-tech-tags span {
+    background: #35483E;
+    color: #F7F4EE;
+  }
+
+  .portfolio-detail-page .portfolio-result {
+    background: #22382E;
+  }
+
+}
+
+/* =====================================
+   IRIS BLOMMOR – PROJEKTSIDA
+===================================== */
+
+/* Samma layout som portfolio-projektet */
+
+.iris-detail-page .portfolio-detail-main {
+  padding-top: 45px;
+}
+
+/* Presentation */
+
+.iris-detail-page .portfolio-hero-text h1 {
+  font-size: clamp(38px, 5vw, 65px);
+}
+
+.iris-detail-page .portfolio-hero-text > p {
+  max-width: 470px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+/* Stor projektbild */
+
+.iris-detail-page .portfolio-hero-image img {
+  height: 330px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Förhandsvisningar */
+
+.iris-detail-page .portfolio-preview-image {
+  aspect-ratio: 1.12 / 1;
+}
+
+.iris-detail-page .portfolio-preview-image img {
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Arbetsprocessen har mer text */
+
+.iris-detail-page .portfolio-process-left p {
+  margin-bottom: 13px;
+  line-height: 1.55;
+}
+
+/* Resultat */
+
+.iris-detail-page .portfolio-result-decoration svg {
+  width: 85px;
+  height: 85px;
+}
+
+.iris-detail-page .portfolio-result-decoration p {
+  font-size: 27px;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 950px) {
+
+  .iris-detail-page .portfolio-hero-text h1 {
+    font-size: 40px;
+  }
+
+  .iris-detail-page .portfolio-hero-text > p {
+    font-size: 15px;
+  }
+
+  .iris-detail-page .portfolio-hero-image img {
+    height: 290px;
+  }
+
+}
+
+/* =====================================
+   MOBIL
+===================================== */
+
+@media (max-width: 700px) {
+
+  .iris-detail-page .portfolio-detail-main {
+    padding-top: 25px;
+  }
+
+  .iris-detail-page .portfolio-hero-text h1 {
+    font-size: 38px;
+  }
+
+  .iris-detail-page .portfolio-hero-text > p {
+    font-size: 15px;
+  }
+
+  .iris-detail-page .portfolio-hero-image img {
+    height: 220px;
+  }
+
+  .iris-detail-page .portfolio-preview-image {
+    aspect-ratio: 1.3 / 1;
+  }
+
+  .iris-detail-page .portfolio-process-left p {
+    line-height: 1.65;
+  }
+
+  .iris-detail-page .portfolio-result-decoration svg {
+    width: 65px;
+    height: 65px;
+  }
+
+  .iris-detail-page .portfolio-result-decoration p {
+    font-size: 24px;
+  }
+
+}
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .iris-detail-page .portfolio-detail-main {
+    background: var(--surface, #172B24);
+  }
+
+}
