@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Om mig | Johanna Sällström</title>
+
+  <meta name="description"
+        content="Lär känna Johanna Sällström – kreativitet, webbutveckling och erfarenhet från floristyrket.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-wrapper about-page">
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+      <a href="index.html" class="logo">JS.</a>
+
+      <!-- Navigation för dator -->
+      <nav class="desktop-nav" aria-label="Huvudnavigation">
+
+        <a href="index.html">Hem</a>
+
+        <a href="ommig.html"
+           class="active"
+           aria-current="page">
+          Om mig
+        </a>
+
+        <a href="projekt.html">Projekt</a>
+
+        <a href="kontakt.html">Kontakt</a>
+
+      </nav>
+
+      <!-- Hamburgermeny -->
+      <details class="menu-dropdown" id="menuDropdown">
+
+        <summary class="hamburger"
+                 aria-label="Öppna eller stäng menyn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+
+        <nav class="dropdown-nav" aria-label="Hamburgermeny">
+
+          <a href="index.html">Hem</a>
+          <a href="ommig.html" aria-current="page">Om mig</a>
+          <a href="projekt.html">Projekt</a>
+          <a href="kontakt.html">Kontakt</a>
+
+        </nav>
+
+      </details>
+
+    </header>
+
+
+    <!-- =========================
+         HUVUDINNEHÅLL
+    ========================== -->
+
+    <main class="about-main">
+
+      <!-- =========================
+           BANNER: PROFIL OCH TEXT
+      ========================== -->
+
+      <section class="about-intro">
+
+        <div class="about-layout">
+
+          <!-- Profilbild -->
+          <div class="about-photo">
+
+            <picture>
+              <img
+                src="images/profilbild.jpg"
+                alt="Johanna med blommor"
+                class="profile-image">
+            </picture>
+
+          </div>
+
+          <!-- Presentation -->
+          <div class="about-text">
+
+            <h1>Om mig</h1>
+
+            <p>
+              Jag är en kreativ och nyfiken person
+              med bakgrund inom floristyrket och
+              erfarenhet från flera olika
+              arbetsområden. Jag tycker om att
+              kombinera struktur med kreativitet
+              och att se idéer växa fram till
+              färdiga resultat.
+            </p>
+
+            <a href="cvpersonligtbrev.html" class="btn">
+              LÄS MITT CV
+              <span aria-hidden="true">→</span>
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           EGENSKAPER
+      ========================== -->
+
+      <section class="about-skills" aria-label="Mina egenskaper">
+
+        <div class="skills-grid">
+
+          <!-- Kreativitet -->
+          <article class="skill-card">
+
+            <div class="skill-icon">
+
+              <svg viewBox="0 0 64 64"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="1.8"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+
+                <path d="M12 51 C13 25 30 12 53 9 C51 32 39 49 12 51Z"/>
+                <path d="M12 51 C24 39 35 27 47 16"/>
+
+              </svg>
+
+            </div>
+
+            <h2>Kreativitet</h2>
+
+            <p>
+              Jag gillar att skapa
+              och hitta nya lösningar.
+            </p>
+
+          </article>
+
+
+          <!-- Webbutveckling -->
+          <article class="skill-card">
+
+            <div class="skill-icon">
+
+              <svg viewBox="0 0 64 64"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="1.8"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+
+                <rect x="10" y="10"
+                      width="44" height="34" rx="2"/>
+
+                <path d="M6 51 H58 L54 45 H10 Z"/>
+                <path d="M24 48 H40"/>
+
+              </svg>
+
+            </div>
+
+            <h2>Webbutveckling</h2>
+
+            <p>
+              Jag lär mig snabbt
+              och tycker om att utvecklas.
+            </p>
+
+          </article>
+
+
+          <!-- Samarbete -->
+          <article class="skill-card">
+
+            <div class="skill-icon heart-icon">
+
+              <svg viewBox="0 0 64 64"
+                   fill="none"
+                   stroke="currentColor"
+                   stroke-width="1.8"
+                   stroke-linecap="round"
+                   stroke-linejoin="round"
+                   aria-hidden="true">
+
+                <path d="M32 53 L12 33 C-2 19 17 5 32 22 C47 5 66 19 52 33 Z"/>
+
+              </svg>
+
+            </div>
+
+            <h2>Samarbete</h2>
+
+            <p>
+              Jag trivs i team
+              och tar ansvar.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           MIN BAKGRUND
+      ========================== -->
+
+      <section class="about-background">
+
+        <h2>Min bakgrund</h2>
+
+        <div class="background-list">
+
+          <div class="background-item">
+            <span class="background-year">2024 – 2026</span>
+            <span>Webbutveckling (nuvarande utbildning)</span>
+          </div>
+
+          <div class="background-item">
+            <span class="background-year">2017 – 2020</span>
+            <span>Hvilan Utbildning, Florist</span>
+          </div>
+
+          <div class="background-item">
+            <span class="background-year">2018 – 2024</span>
+            <span>Olika anställningar inom handel, industri och service</span>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+      <p>© 2026 Johanna Sällström</p>
+
+      <div class="social-links">
+
+        <!-- GitHub -->
+        <a href="https://github.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub">
+
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.09.67-3.74-1.31-3.74-1.31-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.7 2.14 3.22 1.54.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.15a10.6 10.6 0 0 1 5.55 0c2.12-1.44 3.05-1.15 3.05-1.15.61 1.53.23 2.67.11 2.95.72.78 1.15 1.78 1.15 3 0 4.27-2.6 5.22-5.08 5.5.4.35.76 1.02.76 2.06v3.05c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+          </svg>
+
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn"
+           class="social-text">
+          in
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               aria-hidden="true">
+
+            <rect x="2" y="2" width="20" height="20" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="18" cy="6" r="1"
+                    fill="currentColor" stroke="none"/>
+
+          </svg>
+
+        </a>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
