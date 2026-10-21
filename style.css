@@ -924,3 +924,371 @@ img {
   }
 
 }
+
+/* =====================================
+   CV OCH PERSONLIGT BREV
+===================================== */
+
+/* Bilden fyller sidans innehåll */
+
+.cv-page .cv-main {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  background: var(--surface);
+}
+
+/* Själva CV-bilden */
+
+.cv-page .cv-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* =====================================
+   CV – MOBILANPASSNING
+===================================== */
+
+@media (max-width: 700px) {
+
+  .cv-page .cv-main {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cv-page .cv-image {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+/* =====================================
+   CV – DARK MODE
+===================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .cv-page .cv-main {
+    background: var(--surface);
+  }
+
+}
+
+/* =====================================
+   KONTAKTSIDA
+===================================== */
+
+.contact-page .contact-main {
+  background: #EEEAE1;
+
+  min-height: 580px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 65px 25px;
+}
+
+/* Innehållet i mitten */
+
+.contact-section {
+  width: 100%;
+  max-width: 570px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* Dekorativt blad */
+
+.contact-leaf {
+  width: 55px;
+  height: 55px;
+
+  color: #718875;
+
+  margin-bottom: 15px;
+}
+
+.contact-leaf svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Rubrik */
+
+.contact-section h1 {
+  font-family: var(--font-heading);
+  font-size: 45px;
+  font-weight: 500;
+
+  margin-bottom: 18px;
+}
+
+/* Introduktion */
+
+.contact-intro {
+  max-width: 410px;
+
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.8;
+
+  margin-bottom: 35px;
+}
+
+/* =====================================
+   KONTAKTKORT
+===================================== */
+
+.contact-links {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Klickbara kort */
+
+.contact-card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 20px 22px;
+
+  background: #F7F4EE;
+
+  border: 1px solid #D6D3C8;
+  border-radius: 8px;
+
+  text-align: left;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Hover */
+
+.contact-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #A5B5A0;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Ikonruta */
+
+.contact-icon {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #E5E9E0;
+  color: #35483E;
+
+  border-radius: 8px;
+}
+
+.contact-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+/* Text */
+
+.contact-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  min-width: 0;
+}
+
+.contact-card-title {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contact-card-description {
+  font-family: var(--font-body);
+  font-size: 12px;
+
+  color: #53665A;
+
+  overflow-wrap: anywhere;
+}
+
+/* Pil till höger */
+
+.contact-arrow {
+  margin-left: auto;
+
+  font-size: 24px;
+  color: #35483E;
+
+  transition: transform 0.25s ease;
+}
+
+.contact-card:hover .contact-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Avslutande text */
+
+.contact-message {
+  margin-top: 35px;
+
+  font-family: var(--font-handwriting);
+  font-size: 27px;
+
+  color: #718875;
+}
+
+/* Tangentbordsnavigation */
+
+.contact-card:focus-visible {
+  outline: 3px solid #718875;
+  outline-offset: 4px;
+}
+
+
+/* =====================================
+   KONTAKT – MOBIL
+===================================== */
+
+@media (max-width: 700px) {
+
+  .contact-page .contact-main {
+    min-height: 520px;
+    padding: 45px 18px;
+  }
+
+  .contact-leaf {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+  }
+
+  .contact-section h1 {
+    font-size: 34px;
+    margin-bottom: 15px;
+  }
+
+  .contact-intro {
+    font-size: 12px;
+    line-height: 1.8;
+
+    margin-bottom: 28px;
+  }
+
+  .contact-links {
+    gap: 12px;
+  }
+
+  .contact-card {
+    padding: 15px 12px;
+    gap: 12px;
+  }
+
+  .contact-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .contact-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .contact-card-title {
+    font-size: 17px;
+  }
+
+  .contact-card-description {
+    font-size: 10px;
+  }
+
+  .contact-arrow {
+    font-size: 19px;
+  }
+
+  .contact-message {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+}
+
+
+/* =====================================
+   KONTAKT – DARK MODE
+===================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .contact-page .contact-main {
+    background: #172B24;
+  }
+
+  .contact-leaf {
+    color: #A5B5A0;
+  }
+
+  .contact-card {
+    background: #22382E;
+    border-color: #52675A;
+  }
+
+  .contact-card:hover {
+    border-color: #A5B5A0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-icon {
+    background: #35483E;
+    color: #E5E9E0;
+  }
+
+  .contact-card-title {
+    color: #F7F4EE;
+  }
+
+  .contact-card-description {
+    color: #C9D4C6;
+  }
+
+  .contact-arrow {
+    color: #A5B5A0;
+  }
+
+  .contact-message {
+    color: #C9A99C;
+  }
+
+}
