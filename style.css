@@ -1292,3 +1292,516 @@ img {
   }
 
 }
+
+/* =====================================
+   PROJEKTSIDA – GRUND
+===================================== */
+
+.project-page .project-overview {
+  background: var(--surface);
+  padding: 65px 6% 55px;
+}
+
+
+/* =====================================
+   INTRODUKTION
+===================================== */
+
+.project-page .project-intro {
+  margin-bottom: 45px;
+}
+
+/* Liten text ovanför rubriken */
+
+.project-page .project-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-bottom: 25px;
+
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 3px;
+
+  color: var(--green);
+}
+
+/* Linje bredvid texten */
+
+.project-page .eyebrow-line {
+  display: block;
+
+  width: 90px;
+  height: 1px;
+
+  background: var(--sage);
+}
+
+/* Stor rubrik */
+
+.project-page .project-intro h1 {
+  font-family: var(--font-heading);
+
+  font-size: clamp(42px, 6vw, 75px);
+  font-weight: 500;
+  line-height: 1.15;
+
+  margin-bottom: 18px;
+}
+
+/* Introduktionstext */
+
+.project-page .project-intro p {
+  max-width: 650px;
+
+  font-family: var(--font-heading);
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.6;
+}
+
+
+/* =====================================
+   LISTA MED PROJEKT
+===================================== */
+
+.project-page .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+
+/* =====================================
+   STORA PROJEKTKORT
+===================================== */
+
+.project-page .project-feature {
+  display: grid;
+
+  grid-template-columns: 40% minmax(0, 1fr);
+
+  align-items: stretch;
+  gap: 30px;
+
+  padding: 16px;
+
+  background: var(--surface);
+
+  border: 1px solid #DDD8CE;
+  border-radius: 9px;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Hover */
+
+.project-page .project-feature:hover {
+  border-color: var(--sage);
+
+  box-shadow: 0 6px 20px
+    rgba(0, 0, 0, 0.05);
+}
+
+
+/* =====================================
+   PROJEKTBILDER
+===================================== */
+
+.project-page .feature-image {
+  display: block;
+
+  width: 100%;
+  height: 220px;
+
+  overflow: hidden;
+
+  border-radius: 6px;
+  background: #E4DED4;
+}
+
+.project-page .feature-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.35s ease;
+}
+
+.project-page .feature-image:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =====================================
+   PROJEKTINFORMATION
+===================================== */
+
+.project-page .feature-content {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  padding: 10px 0;
+}
+
+/* Kategori */
+
+.project-page .feature-category {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-bottom: 12px;
+
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+
+  color: var(--green);
+}
+
+.project-page .category-line {
+  width: 80px;
+  height: 1px;
+
+  background: var(--sage);
+}
+
+/* Projektrubrik */
+
+.project-page .feature-content h2 {
+  font-family: var(--font-heading);
+
+  font-size: clamp(25px, 3vw, 35px);
+  font-weight: 500;
+  line-height: 1.2;
+
+  margin-bottom: 8px;
+}
+
+/* Beskrivning */
+
+.project-page .feature-description {
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+
+/* =====================================
+   TEKNIKER OCH KNAPP
+===================================== */
+
+.project-page .feature-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+  gap: 20px;
+
+  margin-top: auto;
+}
+
+/* Tekniketiketter */
+
+.project-page .feature-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.project-page .feature-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 13px;
+
+  background: #EAE6DE;
+  color: #27382F;
+
+  border-radius: 5px;
+
+  font-family: var(--font-heading);
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+/* Projektknapp */
+
+.project-page .feature-button {
+  white-space: nowrap;
+
+  font-size: 10px;
+  letter-spacing: 1px;
+
+  padding: 13px 18px;
+}
+
+
+/* =====================================
+   FLER PROJEKT KOMMER
+===================================== */
+
+.project-page .more-projects {
+  padding: 50px 0 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Linjer och bladikon */
+
+.project-page .more-projects-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  width: 100%;
+}
+
+.project-page .decoration-line {
+  width: 120px;
+  max-width: 30%;
+  height: 1px;
+
+  background: var(--sage);
+}
+
+.project-page .more-projects-decoration svg {
+  width: 38px;
+  height: 38px;
+
+  color: var(--green);
+}
+
+/* Handstilstext */
+
+.project-page .more-projects p {
+  font-family: var(--font-handwriting);
+
+  font-size: 30px;
+  letter-spacing: 1px;
+
+  text-align: center;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 950px) {
+
+  .project-page .project-overview {
+    padding: 45px 5%;
+  }
+
+  .project-page .project-feature {
+    grid-template-columns: 42% minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .project-page .feature-image {
+    height: 240px;
+  }
+
+  .project-page .feature-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
+
+
+/* =====================================
+   MOBILANPASSNING
+===================================== */
+
+@media (max-width: 700px) {
+
+  .project-page .project-overview {
+    padding: 35px 18px 40px;
+  }
+
+  /* Introduktion */
+
+  .project-page .project-intro {
+    margin-bottom: 30px;
+  }
+
+  .project-page .project-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+  }
+
+  .project-page .eyebrow-line {
+    width: 55px;
+  }
+
+  .project-page .project-intro h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .project-page .project-intro p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Projektkorten blir vertikala */
+
+  .project-page .project-list {
+    gap: 20px;
+  }
+
+  .project-page .project-feature {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+    padding: 12px;
+  }
+
+  /* Bild överst */
+
+  .project-page .feature-image {
+    width: 100%;
+    height: 190px;
+  }
+
+  /* Text under bilden */
+
+  .project-page .feature-content {
+    padding: 5px 4px 8px;
+  }
+
+  .project-page .feature-category {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .project-page .category-line {
+    width: 55px;
+  }
+
+  .project-page .feature-content h2 {
+    font-size: 27px;
+  }
+
+  .project-page .feature-description {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  /* Tekniker och knapp */
+
+  .project-page .feature-bottom {
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 18px;
+  }
+
+  .project-page .feature-tags {
+    gap: 7px;
+  }
+
+  .project-page .feature-tags span {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+
+  .project-page .feature-button {
+    width: 100%;
+    font-size: 10px;
+    padding: 13px 12px;
+  }
+
+  /* Fler projekt */
+
+  .project-page .more-projects {
+    padding-top: 40px;
+    gap: 15px;
+  }
+
+  .project-page .decoration-line {
+    width: 65px;
+  }
+
+  .project-page .more-projects p {
+    font-size: 25px;
+  }
+
+}
+
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .project-page .project-overview {
+    background: var(--surface);
+  }
+
+  /* Kategorier */
+
+  .project-page .project-eyebrow,
+  .project-page .feature-category {
+    color: #A5B5A0;
+  }
+
+  /* Projektkort */
+
+  .project-page .project-feature {
+    background: #1B3028;
+    border-color: #52675A;
+  }
+
+  .project-page .project-feature:hover {
+    border-color: #A5B5A0;
+
+    box-shadow: 0 6px 20px
+      rgba(0, 0, 0, 0.15);
+  }
+
+  /* Bilder */
+
+  .project-page .feature-image {
+    background: #30463B;
+  }
+
+  /* Tekniketiketter */
+
+  .project-page .feature-tags span {
+    background: #35483E;
+    color: #F7F4EE;
+  }
+
+  /* Dekorativt blad */
+
+  .project-page .more-projects-decoration svg {
+    color: #A5B5A0;
+  }
+
+}
